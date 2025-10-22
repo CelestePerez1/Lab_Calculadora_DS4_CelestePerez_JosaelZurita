@@ -10,6 +10,7 @@ namespace Calculadora_CelestePerezJosaelZurita
         private void button13_Click(object sender, EventArgs e)
         {
             Console.WriteLine("hola");
+            Console.WriteLine("hola");
         }
 
         private void Form1_Load(object sender, EventArgs e)
