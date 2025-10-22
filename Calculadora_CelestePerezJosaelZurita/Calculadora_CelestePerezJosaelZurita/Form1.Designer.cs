@@ -28,31 +28,251 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btn1 = new Button();
+            btn2 = new Button();
+            btn3 = new Button();
+            btn4 = new Button();
+            btn5 = new Button();
+            btn6 = new Button();
+            btn7 = new Button();
+            btn8 = new Button();
+            btn9 = new Button();
+            btn0 = new Button();
+            btnSuma = new Button();
+            btnResta = new Button();
+            btnMult = new Button();
+            btnDivi = new Button();
+            btnIgual = new Button();
+            btnBorrarT = new Button();
+            btnBorrar = new Button();
+            btnPunto = new Button();
+            textMostrar = new TextBox();
             SuspendLayout();
             // 
-            // button1
+            // btn1
             // 
-            button1.Location = new Point(357, 285);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btn1.Location = new Point(41, 189);
+            btn1.Name = "btn1";
+            btn1.Size = new Size(69, 55);
+            btn1.TabIndex = 0;
+            btn1.Text = "1";
+            btn1.UseVisualStyleBackColor = true;
+            // 
+            // btn2
+            // 
+            btn2.Location = new Point(116, 189);
+            btn2.Name = "btn2";
+            btn2.Size = new Size(69, 55);
+            btn2.TabIndex = 1;
+            btn2.Text = "2";
+            btn2.UseVisualStyleBackColor = true;
+            // 
+            // btn3
+            // 
+            btn3.Location = new Point(191, 189);
+            btn3.Name = "btn3";
+            btn3.Size = new Size(69, 55);
+            btn3.TabIndex = 2;
+            btn3.Text = "3";
+            btn3.UseVisualStyleBackColor = true;
+            // 
+            // btn4
+            // 
+            btn4.Location = new Point(41, 259);
+            btn4.Name = "btn4";
+            btn4.Size = new Size(69, 55);
+            btn4.TabIndex = 3;
+            btn4.Text = "4";
+            btn4.UseVisualStyleBackColor = true;
+            // 
+            // btn5
+            // 
+            btn5.Location = new Point(116, 259);
+            btn5.Name = "btn5";
+            btn5.Size = new Size(69, 55);
+            btn5.TabIndex = 4;
+            btn5.Text = "5";
+            btn5.UseVisualStyleBackColor = true;
+            // 
+            // btn6
+            // 
+            btn6.Location = new Point(191, 259);
+            btn6.Name = "btn6";
+            btn6.Size = new Size(69, 55);
+            btn6.TabIndex = 5;
+            btn6.Text = "6";
+            btn6.UseVisualStyleBackColor = true;
+            // 
+            // btn7
+            // 
+            btn7.Location = new Point(41, 329);
+            btn7.Name = "btn7";
+            btn7.Size = new Size(69, 55);
+            btn7.TabIndex = 6;
+            btn7.Text = "7";
+            btn7.UseVisualStyleBackColor = true;
+            // 
+            // btn8
+            // 
+            btn8.Location = new Point(116, 329);
+            btn8.Name = "btn8";
+            btn8.Size = new Size(69, 55);
+            btn8.TabIndex = 7;
+            btn8.Text = "8";
+            btn8.UseVisualStyleBackColor = true;
+            // 
+            // btn9
+            // 
+            btn9.Location = new Point(191, 329);
+            btn9.Name = "btn9";
+            btn9.Size = new Size(69, 55);
+            btn9.TabIndex = 8;
+            btn9.Text = "9";
+            btn9.UseVisualStyleBackColor = true;
+            btn9.Click += button9_Click;
+            // 
+            // btn0
+            // 
+            btn0.Location = new Point(116, 401);
+            btn0.Name = "btn0";
+            btn0.Size = new Size(69, 55);
+            btn0.TabIndex = 9;
+            btn0.Text = "0";
+            btn0.UseVisualStyleBackColor = true;
+            // 
+            // btnSuma
+            // 
+            btnSuma.Location = new Point(281, 189);
+            btnSuma.Name = "btnSuma";
+            btnSuma.Size = new Size(69, 55);
+            btnSuma.TabIndex = 10;
+            btnSuma.Text = "+";
+            btnSuma.UseVisualStyleBackColor = true;
+            // 
+            // btnResta
+            // 
+            btnResta.Location = new Point(281, 259);
+            btnResta.Name = "btnResta";
+            btnResta.Size = new Size(69, 55);
+            btnResta.TabIndex = 11;
+            btnResta.Text = "-";
+            btnResta.UseVisualStyleBackColor = true;
+            // 
+            // btnMult
+            // 
+            btnMult.Location = new Point(116, 128);
+            btnMult.Name = "btnMult";
+            btnMult.Size = new Size(69, 55);
+            btnMult.TabIndex = 12;
+            btnMult.Text = "X";
+            btnMult.UseVisualStyleBackColor = true;
+            btnMult.Click += button13_Click;
+            // 
+            // btnDivi
+            // 
+            btnDivi.Location = new Point(41, 128);
+            btnDivi.Name = "btnDivi";
+            btnDivi.Size = new Size(69, 55);
+            btnDivi.TabIndex = 13;
+            btnDivi.Text = " ÷";
+            btnDivi.UseVisualStyleBackColor = true;
+            // 
+            // btnIgual
+            // 
+            btnIgual.Location = new Point(281, 329);
+            btnIgual.Name = "btnIgual";
+            btnIgual.Size = new Size(69, 127);
+            btnIgual.TabIndex = 14;
+            btnIgual.Text = "=";
+            btnIgual.UseVisualStyleBackColor = true;
+            // 
+            // btnBorrarT
+            // 
+            btnBorrarT.Location = new Point(191, 128);
+            btnBorrarT.Name = "btnBorrarT";
+            btnBorrarT.Size = new Size(69, 55);
+            btnBorrarT.TabIndex = 15;
+            btnBorrarT.Text = "C";
+            btnBorrarT.UseVisualStyleBackColor = true;
+            // 
+            // btnBorrar
+            // 
+            btnBorrar.Location = new Point(281, 128);
+            btnBorrar.Name = "btnBorrar";
+            btnBorrar.Size = new Size(69, 55);
+            btnBorrar.TabIndex = 16;
+            btnBorrar.Text = "⌫";
+            btnBorrar.UseVisualStyleBackColor = true;
+            // 
+            // btnPunto
+            // 
+            btnPunto.Location = new Point(191, 401);
+            btnPunto.Name = "btnPunto";
+            btnPunto.Size = new Size(69, 55);
+            btnPunto.TabIndex = 17;
+            btnPunto.Text = ".";
+            btnPunto.UseVisualStyleBackColor = true;
+            // 
+            // textMostrar
+            // 
+            textMostrar.Location = new Point(46, 29);
+            textMostrar.Multiline = true;
+            textMostrar.Name = "textMostrar";
+            textMostrar.Size = new Size(304, 93);
+            textMostrar.TabIndex = 18;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(699, 477);
-            Controls.Add(button1);
+            BackColor = SystemColors.Control;
+            ClientSize = new Size(390, 477);
+            Controls.Add(textMostrar);
+            Controls.Add(btnPunto);
+            Controls.Add(btnBorrar);
+            Controls.Add(btnBorrarT);
+            Controls.Add(btnIgual);
+            Controls.Add(btnDivi);
+            Controls.Add(btnMult);
+            Controls.Add(btnResta);
+            Controls.Add(btnSuma);
+            Controls.Add(btn0);
+            Controls.Add(btn9);
+            Controls.Add(btn8);
+            Controls.Add(btn7);
+            Controls.Add(btn6);
+            Controls.Add(btn5);
+            Controls.Add(btn4);
+            Controls.Add(btn3);
+            Controls.Add(btn2);
+            Controls.Add(btn1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
+        private Button btn1;
+        private Button btn2;
+        private Button btn3;
+        private Button btn4;
+        private Button btn5;
+        private Button btn6;
+        private Button btn7;
+        private Button btn8;
+        private Button btn9;
+        private Button btn0;
+        private Button btnSuma;
+        private Button btnResta;
+        private Button btnMult;
+        private Button btnDivi;
+        private Button btnIgual;
+        private Button btnBorrarT;
+        private Button btnBorrar;
+        private Button btnPunto;
+        private TextBox textMostrar;
     }
 }
