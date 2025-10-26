@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Calculadora_CelestePerezJosaelZurita")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+169938aff1e06f8954628f2751c3bfbf0a65e6c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57bef73d6011e0d6fefc814702d73df195cb16a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Calculadora_CelestePerezJosaelZurita")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Calculadora_CelestePerezJosaelZurita")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
