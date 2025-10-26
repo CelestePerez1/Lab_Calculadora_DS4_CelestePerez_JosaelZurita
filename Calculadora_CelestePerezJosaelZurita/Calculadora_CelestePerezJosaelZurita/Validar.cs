@@ -23,10 +23,8 @@ namespace Calculadora_CelestePerezJosaelZurita
 
             if (key == (char)Keys.Back) return;
 
-            // If digit
             if (char.IsDigit(key))
             {
-                // Prevent exceeding max length
                 if (textBox.Text.Length >= longiMax)
                 {
                     e.Handled = true;
@@ -48,9 +46,9 @@ namespace Calculadora_CelestePerezJosaelZurita
                 }
 
                 // Si el número está vacío, insertar '0' 
-                int espacioNecesario = 1; // para el '.' que se añadirá
+                int espacioNecesario = 1; 
                 if (ultimoNum.Length == 0)
-                    espacioNecesario += 1; // por el '0' que vamos a insertar
+                    espacioNecesario += 1; 
 
                 if (textBox.Text.Length + espacioNecesario > longiMax)
                 {
@@ -65,7 +63,6 @@ namespace Calculadora_CelestePerezJosaelZurita
                     textBox.SelectionStart = textBox.Text.Length;
                 }
 
-                // permitir que el '.' 
                 return;
             }
 
@@ -201,7 +198,6 @@ namespace Calculadora_CelestePerezJosaelZurita
             if (string.IsNullOrEmpty(reconstruido))
                 reconstruido = "0";
 
-            // Si cambió, actualizar TextBox sin mover el cursor al final inesperadamente
             if (reconstruido != textBox.Text)
             {
                 int oldSelection = textBox.SelectionStart;
@@ -211,22 +207,7 @@ namespace Calculadora_CelestePerezJosaelZurita
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         //Evitar operadores consecutivos 
-        // Sobrecarga antigua: mantiene compatibilidad con llamadas sin nuevoOperador.
-        // Si se llama sin nuevoOperador simplemente devuelve true/false (comportamiento original).
         public static bool OperadorVal(TextBox textBox)
         {
             if (string.IsNullOrEmpty(textBox.Text) || textBox.Text == "0")
@@ -237,8 +218,7 @@ namespace Calculadora_CelestePerezJosaelZurita
         }
 
         // Nueva sobrecarga: recibe el operador que se desea insertar.
-        // Si el último carácter es operador lo reemplaza por el nuevo y devuelve false
-        // (porque ya hizo el reemplazo y no se necesita insertar de nuevo desde el caller).
+        // Si el último carácter es operador lo reemplaza por el nuevo y devuelve 
         public static bool OperadorVal(TextBox textBox, string nuevoOperador)
         {
             if (string.IsNullOrEmpty(textBox.Text) || textBox.Text == "0")
@@ -250,10 +230,10 @@ namespace Calculadora_CelestePerezJosaelZurita
                 // Reemplaza el operador anterior con el nuevo
                 textBox.Text = textBox.Text.Substring(0, textBox.Text.Length - 1) + nuevoOperador;
                 textBox.SelectionStart = textBox.Text.Length;
-                return false; // ya manejado (reemplazado)
+                return false; 
             }
 
-            return true; // OK para insertar el operador normalmente
+            return true; 
         }
 
 
