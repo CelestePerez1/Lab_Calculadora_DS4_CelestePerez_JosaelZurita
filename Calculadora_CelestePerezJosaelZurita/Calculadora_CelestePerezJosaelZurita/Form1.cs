@@ -188,6 +188,7 @@ namespace Calculadora_CelestePerezJosaelZurita
             string op = "-";
             if (!Validar.OperadorVal(textMostrar, op))
             {
+
                 operador = op;
                 return;
             }

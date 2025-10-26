@@ -232,6 +232,7 @@
             // 
             // textMostrar
             // 
+            textMostrar.BackColor = Color.Gold;
             textMostrar.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textMostrar.Location = new Point(45, 57);
             textMostrar.Multiline = true;
@@ -244,10 +245,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(80, 11);
             label1.Name = "label1";
-            label1.Size = new Size(245, 38);
+            label1.Size = new Size(230, 33);
             label1.TabIndex = 19;
             label1.Text = "Calculadora Básica";
             // 
@@ -255,7 +256,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Control;
+            BackColor = Color.Azure;
             ClientSize = new Size(390, 511);
             Controls.Add(label1);
             Controls.Add(textMostrar);
