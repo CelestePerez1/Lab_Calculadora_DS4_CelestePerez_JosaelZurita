@@ -233,6 +233,7 @@
             textMostrar.Location = new Point(46, 29);
             textMostrar.Multiline = true;
             textMostrar.Name = "textMostrar";
+            textMostrar.ReadOnly = true;
             textMostrar.Size = new Size(304, 93);
             textMostrar.TabIndex = 18;
             textMostrar.TextAlign = HorizontalAlignment.Right;

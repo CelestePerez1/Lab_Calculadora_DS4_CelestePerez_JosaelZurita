@@ -5,6 +5,8 @@ namespace Calculadora_CelestePerezJosaelZurita
         public Form1()
         {
             InitializeComponent();
+            //centrear el form a penas se ejecuta
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         //variable
@@ -12,11 +14,9 @@ namespace Calculadora_CelestePerezJosaelZurita
         double num1 = 0;
         double num2 = 0;
 
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
+         
         }
 
 
