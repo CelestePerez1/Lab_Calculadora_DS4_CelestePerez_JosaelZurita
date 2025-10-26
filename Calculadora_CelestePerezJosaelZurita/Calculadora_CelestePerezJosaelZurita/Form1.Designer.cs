@@ -47,11 +47,12 @@
             btnBorrar = new Button();
             btnPunto = new Button();
             textMostrar = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btn1
             // 
-            btn1.Location = new Point(41, 189);
+            btn1.Location = new Point(40, 222);
             btn1.Name = "btn1";
             btn1.Size = new Size(69, 55);
             btn1.TabIndex = 0;
@@ -61,7 +62,7 @@
             // 
             // btn2
             // 
-            btn2.Location = new Point(116, 189);
+            btn2.Location = new Point(115, 222);
             btn2.Name = "btn2";
             btn2.Size = new Size(69, 55);
             btn2.TabIndex = 1;
@@ -71,7 +72,7 @@
             // 
             // btn3
             // 
-            btn3.Location = new Point(191, 189);
+            btn3.Location = new Point(190, 222);
             btn3.Name = "btn3";
             btn3.Size = new Size(69, 55);
             btn3.TabIndex = 2;
@@ -81,7 +82,7 @@
             // 
             // btn4
             // 
-            btn4.Location = new Point(41, 259);
+            btn4.Location = new Point(40, 292);
             btn4.Name = "btn4";
             btn4.Size = new Size(69, 55);
             btn4.TabIndex = 3;
@@ -91,7 +92,7 @@
             // 
             // btn5
             // 
-            btn5.Location = new Point(116, 259);
+            btn5.Location = new Point(115, 292);
             btn5.Name = "btn5";
             btn5.Size = new Size(69, 55);
             btn5.TabIndex = 4;
@@ -101,7 +102,7 @@
             // 
             // btn6
             // 
-            btn6.Location = new Point(191, 259);
+            btn6.Location = new Point(190, 292);
             btn6.Name = "btn6";
             btn6.Size = new Size(69, 55);
             btn6.TabIndex = 5;
@@ -111,7 +112,7 @@
             // 
             // btn7
             // 
-            btn7.Location = new Point(41, 329);
+            btn7.Location = new Point(40, 362);
             btn7.Name = "btn7";
             btn7.Size = new Size(69, 55);
             btn7.TabIndex = 6;
@@ -121,7 +122,7 @@
             // 
             // btn8
             // 
-            btn8.Location = new Point(116, 329);
+            btn8.Location = new Point(115, 362);
             btn8.Name = "btn8";
             btn8.Size = new Size(69, 55);
             btn8.TabIndex = 7;
@@ -131,7 +132,7 @@
             // 
             // btn9
             // 
-            btn9.Location = new Point(191, 329);
+            btn9.Location = new Point(190, 362);
             btn9.Name = "btn9";
             btn9.Size = new Size(69, 55);
             btn9.TabIndex = 8;
@@ -141,7 +142,7 @@
             // 
             // btn0
             // 
-            btn0.Location = new Point(116, 401);
+            btn0.Location = new Point(115, 434);
             btn0.Name = "btn0";
             btn0.Size = new Size(69, 55);
             btn0.TabIndex = 9;
@@ -151,7 +152,7 @@
             // 
             // btnSuma
             // 
-            btnSuma.Location = new Point(281, 189);
+            btnSuma.Location = new Point(280, 222);
             btnSuma.Name = "btnSuma";
             btnSuma.Size = new Size(69, 55);
             btnSuma.TabIndex = 10;
@@ -161,7 +162,7 @@
             // 
             // btnResta
             // 
-            btnResta.Location = new Point(281, 259);
+            btnResta.Location = new Point(280, 292);
             btnResta.Name = "btnResta";
             btnResta.Size = new Size(69, 55);
             btnResta.TabIndex = 11;
@@ -170,7 +171,7 @@
             // 
             // btnMult
             // 
-            btnMult.Location = new Point(116, 128);
+            btnMult.Location = new Point(115, 161);
             btnMult.Name = "btnMult";
             btnMult.Size = new Size(69, 55);
             btnMult.TabIndex = 12;
@@ -180,7 +181,7 @@
             // 
             // btnDivi
             // 
-            btnDivi.Location = new Point(41, 128);
+            btnDivi.Location = new Point(40, 161);
             btnDivi.Name = "btnDivi";
             btnDivi.Size = new Size(69, 55);
             btnDivi.TabIndex = 13;
@@ -189,7 +190,7 @@
             // 
             // btnIgual
             // 
-            btnIgual.Location = new Point(281, 329);
+            btnIgual.Location = new Point(280, 362);
             btnIgual.Name = "btnIgual";
             btnIgual.Size = new Size(69, 127);
             btnIgual.TabIndex = 14;
@@ -199,7 +200,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(191, 128);
+            btnLimpiar.Location = new Point(190, 161);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(69, 55);
             btnLimpiar.TabIndex = 15;
@@ -209,7 +210,7 @@
             // 
             // btnBorrar
             // 
-            btnBorrar.Location = new Point(281, 128);
+            btnBorrar.Location = new Point(280, 161);
             btnBorrar.Name = "btnBorrar";
             btnBorrar.Size = new Size(69, 55);
             btnBorrar.TabIndex = 16;
@@ -219,7 +220,7 @@
             // 
             // btnPunto
             // 
-            btnPunto.Location = new Point(191, 401);
+            btnPunto.Location = new Point(190, 434);
             btnPunto.Name = "btnPunto";
             btnPunto.Size = new Size(69, 55);
             btnPunto.TabIndex = 17;
@@ -230,7 +231,7 @@
             // textMostrar
             // 
             textMostrar.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textMostrar.Location = new Point(46, 29);
+            textMostrar.Location = new Point(45, 57);
             textMostrar.Multiline = true;
             textMostrar.Name = "textMostrar";
             textMostrar.ReadOnly = true;
@@ -238,12 +239,23 @@
             textMostrar.TabIndex = 18;
             textMostrar.TextAlign = HorizontalAlignment.Right;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(80, 11);
+            label1.Name = "label1";
+            label1.Size = new Size(245, 38);
+            label1.TabIndex = 19;
+            label1.Text = "Calculadora Básica";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(390, 477);
+            ClientSize = new Size(390, 511);
+            Controls.Add(label1);
             Controls.Add(textMostrar);
             Controls.Add(btnPunto);
             Controls.Add(btnBorrar);
@@ -291,5 +303,6 @@
         private Button btnBorrar;
         private Button btnPunto;
         private TextBox textMostrar;
+        private Label label1;
     }
 }

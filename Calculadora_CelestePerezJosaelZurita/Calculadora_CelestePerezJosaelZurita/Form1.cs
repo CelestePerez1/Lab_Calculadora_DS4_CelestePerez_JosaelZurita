@@ -16,7 +16,7 @@ namespace Calculadora_CelestePerezJosaelZurita
 
         private void Form1_Load(object sender, EventArgs e)
         {
-         
+
         }
 
 
@@ -160,7 +160,7 @@ namespace Calculadora_CelestePerezJosaelZurita
             switch (operador)
             {
                 case "+":
-                    textMostrar.Text = $"{num1+num2}";
+                    textMostrar.Text = $"{num1 + num2}";
                     break;
 
                 case "x":
