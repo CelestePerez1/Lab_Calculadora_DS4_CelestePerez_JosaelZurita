@@ -168,6 +168,7 @@
             btnResta.TabIndex = 11;
             btnResta.Text = "-";
             btnResta.UseVisualStyleBackColor = true;
+            btnResta.Click += btnResta_Click;
             // 
             // btnMult
             // 
@@ -187,6 +188,7 @@
             btnDivi.TabIndex = 13;
             btnDivi.Text = " ÷";
             btnDivi.UseVisualStyleBackColor = true;
+            btnDivi.Click += btnDivi_Click;
             // 
             // btnIgual
             // 
