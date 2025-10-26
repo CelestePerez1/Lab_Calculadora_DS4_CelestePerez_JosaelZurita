@@ -43,7 +43,7 @@
             btnMult = new Button();
             btnDivi = new Button();
             btnIgual = new Button();
-            btnBorrarT = new Button();
+            btnLimpiar = new Button();
             btnBorrar = new Button();
             btnPunto = new Button();
             textMostrar = new TextBox();
@@ -57,6 +57,7 @@
             btn1.TabIndex = 0;
             btn1.Text = "1";
             btn1.UseVisualStyleBackColor = true;
+            btn1.Click += btn1_Click;
             // 
             // btn2
             // 
@@ -66,6 +67,7 @@
             btn2.TabIndex = 1;
             btn2.Text = "2";
             btn2.UseVisualStyleBackColor = true;
+            btn2.Click += btn2_Click;
             // 
             // btn3
             // 
@@ -75,6 +77,7 @@
             btn3.TabIndex = 2;
             btn3.Text = "3";
             btn3.UseVisualStyleBackColor = true;
+            btn3.Click += btn3_Click;
             // 
             // btn4
             // 
@@ -84,6 +87,7 @@
             btn4.TabIndex = 3;
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = true;
+            btn4.Click += btn4_Click;
             // 
             // btn5
             // 
@@ -93,6 +97,7 @@
             btn5.TabIndex = 4;
             btn5.Text = "5";
             btn5.UseVisualStyleBackColor = true;
+            btn5.Click += btn5_Click;
             // 
             // btn6
             // 
@@ -102,6 +107,7 @@
             btn6.TabIndex = 5;
             btn6.Text = "6";
             btn6.UseVisualStyleBackColor = true;
+            btn6.Click += btn6_Click;
             // 
             // btn7
             // 
@@ -111,6 +117,7 @@
             btn7.TabIndex = 6;
             btn7.Text = "7";
             btn7.UseVisualStyleBackColor = true;
+            btn7.Click += btn7_Click;
             // 
             // btn8
             // 
@@ -120,6 +127,7 @@
             btn8.TabIndex = 7;
             btn8.Text = "8";
             btn8.UseVisualStyleBackColor = true;
+            btn8.Click += btn8_Click;
             // 
             // btn9
             // 
@@ -139,6 +147,7 @@
             btn0.TabIndex = 9;
             btn0.Text = "0";
             btn0.UseVisualStyleBackColor = true;
+            btn0.Click += btn0_Click;
             // 
             // btnSuma
             // 
@@ -148,6 +157,7 @@
             btnSuma.TabIndex = 10;
             btnSuma.Text = "+";
             btnSuma.UseVisualStyleBackColor = true;
+            btnSuma.Click += btnSuma_Click;
             // 
             // btnResta
             // 
@@ -164,7 +174,7 @@
             btnMult.Name = "btnMult";
             btnMult.Size = new Size(69, 55);
             btnMult.TabIndex = 12;
-            btnMult.Text = "X";
+            btnMult.Text = "x";
             btnMult.UseVisualStyleBackColor = true;
             btnMult.Click += button13_Click;
             // 
@@ -185,15 +195,17 @@
             btnIgual.TabIndex = 14;
             btnIgual.Text = "=";
             btnIgual.UseVisualStyleBackColor = true;
+            btnIgual.Click += btnIgual_Click;
             // 
-            // btnBorrarT
+            // btnLimpiar
             // 
-            btnBorrarT.Location = new Point(191, 128);
-            btnBorrarT.Name = "btnBorrarT";
-            btnBorrarT.Size = new Size(69, 55);
-            btnBorrarT.TabIndex = 15;
-            btnBorrarT.Text = "C";
-            btnBorrarT.UseVisualStyleBackColor = true;
+            btnLimpiar.Location = new Point(191, 128);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(69, 55);
+            btnLimpiar.TabIndex = 15;
+            btnLimpiar.Text = "C";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // btnBorrar
             // 
@@ -203,6 +215,7 @@
             btnBorrar.TabIndex = 16;
             btnBorrar.Text = "⌫";
             btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += btnBorrar_Click;
             // 
             // btnPunto
             // 
@@ -212,14 +225,17 @@
             btnPunto.TabIndex = 17;
             btnPunto.Text = ".";
             btnPunto.UseVisualStyleBackColor = true;
+            btnPunto.Click += btnPunto_Click;
             // 
             // textMostrar
             // 
+            textMostrar.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textMostrar.Location = new Point(46, 29);
             textMostrar.Multiline = true;
             textMostrar.Name = "textMostrar";
             textMostrar.Size = new Size(304, 93);
             textMostrar.TabIndex = 18;
+            textMostrar.TextAlign = HorizontalAlignment.Right;
             // 
             // Form1
             // 
@@ -230,7 +246,7 @@
             Controls.Add(textMostrar);
             Controls.Add(btnPunto);
             Controls.Add(btnBorrar);
-            Controls.Add(btnBorrarT);
+            Controls.Add(btnLimpiar);
             Controls.Add(btnIgual);
             Controls.Add(btnDivi);
             Controls.Add(btnMult);
@@ -247,7 +263,7 @@
             Controls.Add(btn2);
             Controls.Add(btn1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Calculadora ";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -270,7 +286,7 @@
         private Button btnMult;
         private Button btnDivi;
         private Button btnIgual;
-        private Button btnBorrarT;
+        private Button btnLimpiar;
         private Button btnBorrar;
         private Button btnPunto;
         private TextBox textMostrar;
